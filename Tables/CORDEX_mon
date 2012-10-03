@@ -1,7 +1,7 @@
 table_id: Table mon
 modeling_realm: atmos
 
-frequency: day
+frequency: mon
 
 cmor_version: 2.0.1         ! version of CMOR that can read this table
 cf_version:   1.4         ! version of CF that output conforms to
@@ -31,7 +31,7 @@ expt_id_ok: 'EH5-OM-20C-3' 'EH5-OM-20C-3'
 expt_id_ok: 'ERAint' 'ERAint'
 
 
-approx_interval:  1.000000     ! approximate spacing between successive time
+approx_interval:  30.000000     ! approximate spacing between successive time
                                !   samples (in units of the output time 
                                !   coordinate.
 
