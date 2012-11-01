@@ -919,7 +919,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     eastward_wind_at_850_hPa
+standard_name:     eastward_wind
 units:             m s-1 
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -944,7 +944,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     northward_wind_at_850_hPa
+standard_name:     northward_wind
 units:             m s-1 
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -969,7 +969,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     air_temperature_at_850hPa
+standard_name:     air_temperature
 units:             K
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -995,7 +995,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     specific_humidity_at_850_hPa
+standard_name:     specific_humidity
 units:             1
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -1021,7 +1021,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     eastward_wind_at_500_hPa
+standard_name:     eastward_wind
 units:             m s-1 
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -1046,7 +1046,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     northward_wind_at_500_hPa
+standard_name:     northward_wind
 units:             m s-1 
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -1071,7 +1071,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     geopotential_height_at_500_hPa
+standard_name:     geopotential_height
 units:             m
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -1096,7 +1096,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     air_temperature_at_500hPa
+standard_name:     air_temperature
 units:             K
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -1122,7 +1122,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     eastward_wind_at_200_hPa
+standard_name:     eastward_wind
 units:             m s-1 
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -1148,7 +1148,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     northward_wind_at_200_hpa
+standard_name:     northward_wind
 units:             m s-1 
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -1174,7 +1174,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     air_temperature_at_200hPa
+standard_name:     air_temperature
 units:             K
 cell_methods:      time: mean
 cell_measures:      area: areacella
@@ -1201,7 +1201,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     geopotential_height_at_200hPa
+standard_name:     geopotential_height
 units:             m
 cell_methods:      time: mean
 cell_measures:      area: areacella
