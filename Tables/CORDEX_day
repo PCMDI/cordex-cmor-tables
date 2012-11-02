@@ -14,20 +14,21 @@ missing_value: 1.e20      ! value used to indicate a missing value
 
 product: output
 ! CMIP5's Table adapted for CORDEX
-required_global_attributes: creation_date tracking_id forcing model_id parent_experiment_id branch_time contact institute_id ! space separated required global attribute 
+required_global_attributes: creation_date tracking_id forcing model_id contact institute_id ! space separated required global attribute 
 
 forcings:   N/A Nat Ant GHG SA 
 
-expt_id_ok: 'A1BfromIPSL'
-expt_id_ok: 'A1BfromEH5'
-expt_id_ok: '20CfromIPSL'
-expt_id_ok: '20CfromEH5'
-expt_id_ok: 'fromERAint'
-expt_id_ok: 'IPSL-CM4-A1B'
-expt_id_ok: 'IPSL-CM4-20C'
-expt_id_ok: 'EH5-OM-A1B-3'
-expt_id_ok: 'EH5-OM-20C-3'
-expt_id_ok: 'ERAint'
+expt_id_ok: 'Evaluation run with reanalysis forcing' 'evaluation'
+expt_id_ok: 'A1BfromIPSL' 'A1BfromIPSL'
+expt_id_ok: 'A1BfromEH5' 'A1BfromEH5'
+expt_id_ok: '20CfromIPSL' '20CfromIPSL'
+expt_id_ok: '20CfromEH5' '20CfromEH5'
+expt_id_ok: 'fromERAint' 'fromERAint'
+expt_id_ok: 'IPSL-CM4-A1B' 'IPSL-CM4-A1B'
+expt_id_ok: 'IPSL-CM4-20C' 'IPSL-CM4-20C'
+expt_id_ok: 'EH5-OM-A1B-3' 'EH5-OM-A1B-3'
+expt_id_ok: 'EH5-OM-20C-3' 'EH5-OM-20C-3'
+expt_id_ok: 'ERAint' 'ERAint'
 
 
 approx_interval:  1.000000     ! approximate spacing between successive time
@@ -420,8 +421,7 @@ units:             %
 cell_methods:      time: mean
 cell_measures:      area: areacella
 long_name:         Total Cloud Fraction
-comment:           for the whole atmospheric column, as seen from the surface or the top of
-the atmosphere. Include both large-scale and convective cloud.
+comment:           for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Include both large-scale and convective cloud.
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
