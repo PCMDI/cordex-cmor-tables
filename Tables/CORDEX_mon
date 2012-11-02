@@ -178,6 +178,77 @@ must_have_bounds: yes
 !----------------------------------
 !
 
+!============
+axis_entry: plev850
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    air_pressure
+units:            Pa
+axis:             Z             ! X, Y, Z, T (default: undeclared)
+positive:         down         ! up or down (default: undeclared)
+long_name:        pressure
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         plev
+stored_direction: decreasing
+valid_min:        85000.
+valid_max:        85000.
+type:             double
+value:            85000.
+must_have_bounds: no
+!----------------------------------
+!
+
+!============
+axis_entry: plev500
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    air_pressure
+units:            Pa
+axis:             Z             ! X, Y, Z, T (default: undeclared)
+positive:         down         ! up or down (default: undeclared)
+long_name:        pressure
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         plev
+stored_direction: decreasing
+valid_min:        50000.
+valid_max:        50000.
+type:             double
+value:            50000.
+must_have_bounds: no
+!----------------------------------
+!
+
+!============
+axis_entry: plev200
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    air_pressure
+units:            Pa
+axis:             Z             ! X, Y, Z, T (default: undeclared)
+positive:         down         ! up or down (default: undeclared)
+long_name:        pressure
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         plev
+stored_direction: decreasing
+valid_min:        20000.
+valid_max:        20000.
+type:             double
+value:            20000.
+must_have_bounds: no
+!----------------------------------
+!
 
 !============
 variable_entry:    tas
@@ -927,7 +998,7 @@ long_name:         Eastward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev850
 out_name:          ua850
 type:              real
 valid_min:         -68.65
@@ -952,7 +1023,7 @@ long_name:         Northward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev850
 out_name:          va850
 type:              real
 valid_min:         -71.1
@@ -977,7 +1048,7 @@ long_name:         Air Temperature
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev850
 out_name:          ta850
 type:              real
 valid_min:         157.1
@@ -1003,7 +1074,7 @@ long_name:         Specific Humidity
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev850
 out_name:          hus850
 type:              real
 valid_min:         -0.000299
@@ -1029,7 +1100,7 @@ long_name:         Eastward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev500
 out_name:          ua500
 type:              real
 valid_min:         -68.65
@@ -1054,7 +1125,7 @@ long_name:         Northward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev500
 out_name:          va500
 type:              real
 valid_min:         -71.1
@@ -1104,7 +1175,7 @@ long_name:         Air Temperature
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev500
 out_name:          ta500
 type:              real
 valid_min:         157.1
@@ -1130,7 +1201,7 @@ long_name:         Eastward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev200
 out_name:          ua200
 type:              real
 valid_min:         -68.65
@@ -1156,7 +1227,7 @@ long_name:         Northward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev200
 out_name:          va200
 type:              real
 valid_min:         -71.1
@@ -1182,7 +1253,7 @@ long_name:         Air Temperature
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev200
 out_name:          ta200
 type:              real
 valid_min:         157.1
@@ -1209,7 +1280,7 @@ long_name:         Geopotential Height
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev200
 out_name:          zg200
 type:              real
 valid_min:         -719.7
