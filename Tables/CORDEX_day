@@ -366,7 +366,7 @@ ok_max_mean_abs:   0.008749
 
 
 !============
-variable_entry:    sfcwind
+variable_entry:    sfcWind
 !============
 modeling_realm:    atmos
 !----------------------------------
@@ -382,13 +382,13 @@ comment:           near-surface (usually, 10 meters) wind speed.
 ! Additional variable information:
 !----------------------------------
 dimensions:        longitude latitude time height10m
-out_name:          sfcwind
+out_name:          sfcWind
 type:              real
 !----------------------------------
 !
 
 !============
-variable_entry:    sfcwindmax
+variable_entry:    sfcWindmax
 !============
 modeling_realm:    atmos
 !----------------------------------
@@ -404,7 +404,7 @@ comment:           near-surface (usually, 10 meters) wind speed.
 ! Additional variable information:
 !----------------------------------
 dimensions:        longitude latitude time height10m
-out_name:          sfcwindmax
+out_name:          sfcWindmax
 type:              real
 !----------------------------------
 !
