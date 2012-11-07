@@ -1,7 +1,7 @@
 table_id: Table 6h
 modeling_realm: atmos
 
-frequency: day
+frequency: 6hr
 
 cmor_version: 2.0.1         ! version of CMOR that can read this table
 cf_version:   1.4         ! version of CF that output conforms to
@@ -14,23 +14,22 @@ missing_value: 1.e20      ! value used to indicate a missing value
 
 product: output
 ! CMIP5's Table adapted for CORDEX
-required_global_attributes: creation_date tracking_id forcing model_id parent_experiment_id branch_time contact institute_id ! space separated required global attribute 
+required_global_attributes: creation_date tracking_id forcing model_id contact institute_id ! space separated required global attribute 
 
 forcings:   N/A Nat Ant GHG SA 
+expt_id_ok: 'Evaluation run with reanalysis forcing' 'evaluation'
+expt_id_ok: 'A1BfromIPSL' 'A1BfromIPSL'
+expt_id_ok: 'A1BfromEH5' 'A1BfromEH5'
+expt_id_ok: '20CfromIPSL' '20CfromIPSL'
+expt_id_ok: '20CfromEH5' '20CfromEH5'
+expt_id_ok: 'fromERAint' 'fromERAint'
+expt_id_ok: 'IPSL-CM4-A1B' 'IPSL-CM4-A1B'
+expt_id_ok: 'IPSL-CM4-20C' 'IPSL-CM4-20C'
+expt_id_ok: 'EH5-OM-A1B-3' 'EH5-OM-A1B-3'
+expt_id_ok: 'EH5-OM-20C-3' 'EH5-OM-20C-3'
+expt_id_ok: 'ERAint' 'ERAint'
 
-expt_id_ok: 'A1BfromIPSL'
-expt_id_ok: 'A1BfromEH5'
-expt_id_ok: '20CfromIPSL'
-expt_id_ok: '20CfromEH5'
-expt_id_ok: 'fromERAint'
-expt_id_ok: 'IPSL-CM4-A1B'
-expt_id_ok: 'IPSL-CM4-20C'
-expt_id_ok: 'EH5-OM-A1B-3'
-expt_id_ok: 'EH5-OM-20C-3'
-expt_id_ok: 'ERAint'
-
-
-approx_interval:  1.000000     ! approximate spacing between successive time
+approx_interval:  0.250000     ! approximate spacing between successive time
                                !   samples (in units of the output time 
                                !   coordinate.
 
@@ -101,6 +100,25 @@ must_have_bounds: yes
 !----------------------------------
 !
 
+!============
+axis_entry: time1
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    time
+units:            days since ?
+axis:             T             ! X, Y, Z, T (default: undeclared)
+long_name:        time
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         time
+stored_direction: increasing
+type:             double
+must_have_bounds: no
+!----------------------------------
+!
 
 !============
 axis_entry: height2m
@@ -240,7 +258,7 @@ comment:           Compute the mass (summed over all all layers) of frozen water
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          mrfso
 type:              real
 valid_min:         0
@@ -318,7 +336,7 @@ comment:           Compute the mass per unit area  (summed over all soil layers)
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          mrso
 type:              real
 valid_min:         -64.17
@@ -344,7 +362,7 @@ comment:           Compute as the mass of surface snow on the land portion of th
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          snw
 type:              real
 valid_min:         -0.007542
@@ -482,7 +500,7 @@ comment:           near-surface (usually, 10 meters) eastward component of wind.
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time height10m
+dimensions:        longitude latitude time1 height10m
 out_name:          uas
 type:              real
 valid_min:         -19.01
@@ -508,7 +526,7 @@ comment:           near-surface (usually, 10 meters) northward component of wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time height10m
+dimensions:        longitude latitude time1 height10m
 out_name:          vas
 type:              real
 valid_min:         -18.04
@@ -590,7 +608,7 @@ comment:           ""skin"" temperature (i.e., SST for open ocean)
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          ts
 type:              real
 valid_min:         176.8
@@ -618,7 +636,7 @@ comment:
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          zmla
 type:              real
 !----------------------------------
@@ -639,7 +657,7 @@ comment:           vertically integrated for a column
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          prw
 type:              real
 valid_min:         0
@@ -666,7 +684,7 @@ comment:           calculate mass of condensed (liquid + ice) water in the colum
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          clwvi
 type:              real
 valid_min:         -3.827e-06
@@ -692,7 +710,7 @@ comment:           calculate mass of ice water in the column divided by the area
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          clivi
 type:              real
 valid_min:         -1.872e-06
