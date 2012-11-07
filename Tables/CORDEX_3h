@@ -103,6 +103,28 @@ must_have_bounds: yes
 !
 
 
+
+!============
+axis_entry: time1
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    time
+units:            days since ?
+axis:             T             ! X, Y, Z, T (default: undeclared)
+long_name:        time
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         time
+stored_direction: increasing
+type:             double
+must_have_bounds: no
+!----------------------------------
+!
+
+
 !============
 axis_entry: height2m
 !============
@@ -195,7 +217,7 @@ comment:           daily-mean near-surface (usually, 2 meter) air temperature.
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time height2m
+dimensions:        longitude latitude time1 height2m
 out_name:          tas
 type:              real
 valid_min:         180.6
@@ -247,7 +269,7 @@ long_name:         Surface Air Pressure
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          ps
 type:              real
 valid_min:         4.792e+04
@@ -272,7 +294,7 @@ long_name:         Sea Level Pressure
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          psl
 type:              real
 valid_min:         9.477e+04
@@ -301,7 +323,7 @@ comment:           near-surface (usually, 2 meter) specific humidity.
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time height2m
+dimensions:        longitude latitude time1 height2m
 out_name:          huss
 type:              real
 valid_min:         -7.21e-06
@@ -313,7 +335,7 @@ ok_max_mean_abs:   0.008749
 
 
 !============
-variable_entry:    sfcwind
+variable_entry:    sfcWind
 !============
 modeling_realm:    atmos
 !----------------------------------
@@ -328,8 +350,8 @@ comment:           near-surface (usually, 10 meters) wind speed.
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time height10m
-out_name:          sfcwind
+dimensions:        longitude latitude time1 height10m
+out_name:          sfcWind
 type:              real
 !----------------------------------
 !
