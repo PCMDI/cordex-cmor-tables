@@ -197,6 +197,78 @@ must_have_bounds: yes
 
 
 
+!============
+axis_entry: plev850
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    air_pressure
+units:            Pa
+axis:             Z             ! X, Y, Z, T (default: undeclared)
+positive:         down         ! up or down (default: undeclared)
+long_name:        pressure
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         plev
+stored_direction: decreasing
+valid_min:        85000.
+valid_max:        85000.
+type:             double
+value:            85000.
+must_have_bounds: no
+!----------------------------------
+!
+
+!============
+axis_entry: plev500
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    air_pressure
+units:            Pa
+axis:             Z             ! X, Y, Z, T (default: undeclared)
+positive:         down         ! up or down (default: undeclared)
+long_name:        pressure
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         plev
+stored_direction: decreasing
+valid_min:        50000.
+valid_max:        50000.
+type:             double
+value:            50000.
+must_have_bounds: no
+!----------------------------------
+!
+
+!============
+axis_entry: plev200
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    air_pressure
+units:            Pa
+axis:             Z             ! X, Y, Z, T (default: undeclared)
+positive:         down         ! up or down (default: undeclared)
+long_name:        pressure
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         plev
+stored_direction: decreasing
+valid_min:        20000.
+valid_max:        20000.
+type:             double
+value:            20000.
+must_have_bounds: no
+!----------------------------------
+!
+
 
 !============
 variable_entry:    evspsbl
@@ -727,7 +799,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     eastward_wind_at_850_hPa
+standard_name:     eastward_wind
 units:             m s-1 
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -735,7 +807,7 @@ long_name:         Eastward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev850
 out_name:          ua850
 type:              real
 valid_min:         -68.65
@@ -752,7 +824,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     northward_wind_at_850_hPa
+standard_name:     northward_wind
 units:             m s-1 
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -760,7 +832,7 @@ long_name:         Northward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev850
 out_name:          va850
 type:              real
 valid_min:         -71.1
@@ -777,7 +849,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     air_temperature_at_850hPa
+standard_name:     air_temperature
 units:             K
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -785,7 +857,7 @@ long_name:         Air Temperature
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev850
 out_name:          ta850
 type:              real
 valid_min:         157.1
@@ -803,7 +875,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     specific_humidity_at_850_hPa
+standard_name:     specific_humidity
 units:             1
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -811,7 +883,7 @@ long_name:         Specific Humidity
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev850
 out_name:          hus850
 type:              real
 valid_min:         -0.000299
@@ -829,7 +901,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     eastward_wind_at_500_hPa
+standard_name:     eastward_wind
 units:             m s-1 
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -837,7 +909,7 @@ long_name:         Eastward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev500
 out_name:          ua500
 type:              real
 valid_min:         -68.65
@@ -854,7 +926,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     northward_wind_at_500_hPa
+standard_name:     northward_wind
 units:             m s-1 
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -862,7 +934,7 @@ long_name:         Northward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev500
 out_name:          va500
 type:              real
 valid_min:         -71.1
@@ -879,7 +951,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     geopotential_height_at_500_hPa
+standard_name:     geopotential
 units:             m
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -887,7 +959,7 @@ long_name:         Geopotential Height
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev500
 out_name:          zg500
 type:              real
 valid_min:         -719.7
@@ -904,7 +976,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     air_temperature_at_500hPa
+standard_name:     air_temperature
 units:             K
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -912,7 +984,7 @@ long_name:         Air Temperature
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev500
 out_name:          ta500
 type:              real
 valid_min:         157.1
@@ -930,7 +1002,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     eastward_wind_at_200_hPa
+standard_name:     eastward_wind
 units:             m s-1 
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -938,7 +1010,7 @@ long_name:         Eastward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev200
 out_name:          ua200
 type:              real
 valid_min:         -68.65
@@ -956,7 +1028,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     northward_wind_at_200_hpa
+standard_name:     northward_wind
 units:             m s-1 
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -964,7 +1036,7 @@ long_name:         Northward Wind
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev200
 out_name:          va200
 type:              real
 valid_min:         -71.1
@@ -982,7 +1054,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     air_temperature_at_200hPa
+standard_name:     air_temperature
 units:             K
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -990,7 +1062,7 @@ long_name:         Air Temperature
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev200
 out_name:          ta200
 type:              real
 valid_min:         157.1
@@ -1009,7 +1081,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     geopotential_height_at_200hPa
+standard_name:     geopotential_height
 units:             m
 cell_methods:      time: point
 cell_measures:      area: areacella
@@ -1017,7 +1089,7 @@ long_name:         Geopotential Height
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1 plev200
 out_name:          zg200
 type:              real
 valid_min:         -719.7
