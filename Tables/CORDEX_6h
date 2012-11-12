@@ -3,10 +3,10 @@ modeling_realm: atmos
 
 frequency: 6hr
 
-cmor_version: 2.0.1         ! version of CMOR that can read this table
+cmor_version: 2.6         ! version of CMOR that can read this table
 cf_version:   1.4         ! version of CF that output conforms to
 project_id:   CORDEX  ! project id
-table_date:   April 2012 ! date this table was constructed
+table_date:   Nov 2012 ! date this table was constructed
 
 missing_value: 1.e20      ! value used to indicate a missing value
                           !   in arrays output by netCDF as 32-bit IEEE 
