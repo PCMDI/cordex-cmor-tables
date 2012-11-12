@@ -333,10 +333,6 @@ comment:           Compute the mass (summed over all all layers) of frozen water
 dimensions:        longitude latitude time1
 out_name:          mrfso
 type:              real
-valid_min:         0
-valid_max:         5763
-ok_min_mean_abs:   -419
-ok_max_mean_abs:   940.3
 !----------------------------------
 !
 
@@ -359,10 +355,6 @@ comment:           Compute the total surface runoff leaving the land portion of 
 dimensions:        longitude latitude time
 out_name:          mrros
 type:              real
-valid_min:         -6.802e-06
-valid_max:         0.0009825
-ok_min_mean_abs:   -5.867e-06
-ok_max_mean_abs:   1.302e-05
 !----------------------------------
 !
 
@@ -385,10 +377,6 @@ comment:           "compute the total runoff (including ""drainage"" through the
 dimensions:        longitude latitude time
 out_name:          mrro
 type:              real
-valid_min:         -0.0002019
-valid_max:         0.001065
-ok_min_mean_abs:   -6.668e-06
-ok_max_mean_abs:   1.874e-05
 !----------------------------------
 !
 
@@ -411,10 +399,6 @@ comment:           Compute the mass per unit area  (summed over all soil layers)
 dimensions:        longitude latitude time1
 out_name:          mrso
 type:              real
-valid_min:         -64.17
-valid_max:         5717
-ok_min_mean_abs:   -1424
-ok_max_mean_abs:   3038
 !----------------------------------
 !
 
@@ -437,10 +421,6 @@ comment:           Compute as the mass of surface snow on the land portion of th
 dimensions:        longitude latitude time1
 out_name:          snw
 type:              real
-valid_min:         -0.007542
-valid_max:         9.555e+05
-ok_min_mean_abs:   -6025
-ok_max_mean_abs:   1.213e+04
 !----------------------------------
 !
 
@@ -464,10 +444,6 @@ comment:           Compute as the total surface melt water on the land portion o
 dimensions:        longitude latitude time
 out_name:          snm
 type:              real
-valid_min:         0
-valid_max:         0.0003926
-ok_min_mean_abs:   -2.092e-06
-ok_max_mean_abs:   6.123e-06
 !----------------------------------
 !
 
@@ -492,10 +468,6 @@ dimensions:        longitude latitude time
 out_name:          rlut
 type:              real
 positive:          up
-valid_min:         67.48
-valid_max:         383.2
-ok_min_mean_abs:   214.1
-ok_max_mean_abs:   227.5
 !----------------------------------
 !
 
@@ -523,10 +495,6 @@ dimensions:        longitude latitude time
 out_name:          rsdt
 type:              real
 positive:          down
-valid_min:         0
-valid_max:         555.5
-ok_min_mean_abs:   294.4
-ok_max_mean_abs:   303.8
 !----------------------------------
 !
 
@@ -549,10 +517,6 @@ dimensions:        longitude latitude time
 out_name:          rsut
 type:              real
 positive:          up
-valid_min:         -0.02689
-valid_max:         416.9
-ok_min_mean_abs:   96.72
-ok_max_mean_abs:   114.1
 !----------------------------------
 !
 
@@ -575,10 +539,6 @@ comment:           near-surface (usually, 10 meters) eastward component of wind.
 dimensions:        longitude latitude time1 height10m
 out_name:          uas
 type:              real
-valid_min:         -19.01
-valid_max:         18.68
-ok_min_mean_abs:   1.668
-ok_max_mean_abs:   4.106
 !----------------------------------
 !
 
@@ -601,10 +561,6 @@ comment:           near-surface (usually, 10 meters) northward component of wind
 dimensions:        longitude latitude time1 height10m
 out_name:          vas
 type:              real
-valid_min:         -18.04
-valid_max:         22.84
-ok_min_mean_abs:   1.065
-ok_max_mean_abs:   2.678
 !----------------------------------
 !
 
@@ -629,10 +585,6 @@ dimensions:        longitude latitude time
 out_name:          tauu
 type:              real
 positive:          down
-valid_min:         -2.729
-valid_max:         2.934
-ok_min_mean_abs:   0.03979
-ok_max_mean_abs:   0.1065
 !----------------------------------
 !
 
@@ -655,10 +607,6 @@ dimensions:        longitude latitude time
 out_name:          tauv
 type:              real
 positive:          down
-valid_min:         -2.472
-valid_max:         2.527
-ok_min_mean_abs:   0.01447
-ok_max_mean_abs:   0.08134
 !----------------------------------
 !
 
@@ -683,10 +631,6 @@ comment:           ""skin"" temperature (i.e., SST for open ocean)
 dimensions:        longitude latitude time1
 out_name:          ts
 type:              real
-valid_min:         176.8
-valid_max:         331.8
-ok_min_mean_abs:   274.2
-ok_max_mean_abs:   281.8
 !----------------------------------
 !
 
@@ -732,10 +676,6 @@ comment:           vertically integrated for a column
 dimensions:        longitude latitude time1
 out_name:          prw
 type:              real
-valid_min:         0
-valid_max:         70.0
-ok_min_mean_abs:   0.0
-ok_max_mean_abs:   100.0
 !----------------------------------
 !
 
@@ -759,10 +699,6 @@ comment:           calculate mass of condensed (liquid + ice) water in the colum
 dimensions:        longitude latitude time1
 out_name:          clwvi
 type:              real
-valid_min:         -3.827e-06
-valid_max:         3.364
-ok_min_mean_abs:   -0.03549
-ok_max_mean_abs:   0.2846
 !----------------------------------
 !
 
@@ -785,10 +721,6 @@ comment:           calculate mass of ice water in the column divided by the area
 dimensions:        longitude latitude time1
 out_name:          clivi
 type:              real
-valid_min:         -1.872e-06
-valid_max:         1.535
-ok_min_mean_abs:   -0.0348
-ok_max_mean_abs:   0.1187
 !----------------------------------
 !
 
@@ -810,10 +742,6 @@ long_name:         Eastward Wind
 dimensions:        longitude latitude time1 plev850
 out_name:          ua850
 type:              real
-valid_min:         -68.65
-valid_max:         136.6
-ok_min_mean_abs:   1.101
-ok_max_mean_abs:   22.42
 !----------------------------------
 !
 
@@ -835,10 +763,6 @@ long_name:         Northward Wind
 dimensions:        longitude latitude time1 plev850
 out_name:          va850
 type:              real
-valid_min:         -71.1
-valid_max:         69.93
-ok_min_mean_abs:   0.9886
-ok_max_mean_abs:   4.679
 !----------------------------------
 !
 
@@ -860,10 +784,6 @@ long_name:         Air Temperature
 dimensions:        longitude latitude time1 plev850
 out_name:          ta850
 type:              real
-valid_min:         157.1
-valid_max:         326.4
-ok_min_mean_abs:   200.2
-ok_max_mean_abs:   289.9
 !----------------------------------
 !
 
@@ -886,10 +806,6 @@ long_name:         Specific Humidity
 dimensions:        longitude latitude time1 plev850
 out_name:          hus850
 type:              real
-valid_min:         -0.000299
-valid_max:         0.02812
-ok_min_mean_abs:   -0.0003539
-ok_max_mean_abs:   0.01027
 !----------------------------------
 !
 
@@ -912,10 +828,6 @@ long_name:         Eastward Wind
 dimensions:        longitude latitude time1 plev500
 out_name:          ua500
 type:              real
-valid_min:         -68.65
-valid_max:         136.6
-ok_min_mean_abs:   1.101
-ok_max_mean_abs:   22.42
 !----------------------------------
 !
 
@@ -937,10 +849,6 @@ long_name:         Northward Wind
 dimensions:        longitude latitude time1 plev500
 out_name:          va500
 type:              real
-valid_min:         -71.1
-valid_max:         69.93
-ok_min_mean_abs:   0.9886
-ok_max_mean_abs:   4.679
 !----------------------------------
 !
 
@@ -962,10 +870,6 @@ long_name:         Geopotential Height
 dimensions:        longitude latitude time1 plev500
 out_name:          zg500
 type:              real
-valid_min:         -719.7
-valid_max:         3.306e+04
-ok_min_mean_abs:   -113.4
-ok_max_mean_abs:   3.164e+04
 !----------------------------------
 !
 
@@ -987,10 +891,6 @@ long_name:         Air Temperature
 dimensions:        longitude latitude time1 plev500
 out_name:          ta500
 type:              real
-valid_min:         157.1
-valid_max:         326.4
-ok_min_mean_abs:   200.2
-ok_max_mean_abs:   289.9
 !----------------------------------
 !
 
@@ -1013,10 +913,6 @@ long_name:         Eastward Wind
 dimensions:        longitude latitude time1 plev200
 out_name:          ua200
 type:              real
-valid_min:         -68.65
-valid_max:         136.6
-ok_min_mean_abs:   1.101
-ok_max_mean_abs:   22.42
 !----------------------------------
 !
 
@@ -1039,10 +935,6 @@ long_name:         Northward Wind
 dimensions:        longitude latitude time1 plev200
 out_name:          va200
 type:              real
-valid_min:         -71.1
-valid_max:         69.93
-ok_min_mean_abs:   0.9886
-ok_max_mean_abs:   4.679
 !----------------------------------
 !
 
@@ -1065,10 +957,6 @@ long_name:         Air Temperature
 dimensions:        longitude latitude time1 plev200
 out_name:          ta200
 type:              real
-valid_min:         157.1
-valid_max:         326.4
-ok_min_mean_abs:   200.2
-ok_max_mean_abs:   289.9
 !----------------------------------
 !
 
@@ -1092,10 +980,6 @@ long_name:         Geopotential Height
 dimensions:        longitude latitude time1 plev200
 out_name:          zg200
 type:              real
-valid_min:         -719.7
-valid_max:         3.306e+04
-ok_min_mean_abs:   -113.4
-ok_max_mean_abs:   3.164e+04
 !----------------------------------
 !
 
