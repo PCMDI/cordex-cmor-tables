@@ -1232,7 +1232,7 @@ long_name:         Specific Humidity
 ! Additional variable information:
 !----------------------------------
 dimensions:        longitude latitude time plev850
-out_name:          ta850
+out_name:          hus850
 type:              real
 !----------------------------------
 !
