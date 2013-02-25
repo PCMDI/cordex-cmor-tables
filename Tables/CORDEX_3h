@@ -12,6 +12,7 @@ missing_value: 1.e20      ! value used to indicate a missing value
                           !   in arrays output by netCDF as 32-bit IEEE 
                           !   floating-point numbers (float or real)
 
+
 product: output
 ! CMIP5's Table adapted for CORDEX
 required_global_attributes: creation_date tracking_id forcing model_id contact institute_id ! space separated required global attribute 
@@ -198,6 +199,9 @@ must_have_bounds: yes
 !============
 variable_entry:    tas
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -221,6 +225,9 @@ type:              real
 !============
 variable_entry:    pr
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -243,6 +250,9 @@ type:              real
 !============
 variable_entry:    ps
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -264,6 +274,9 @@ type:              real
 !============
 variable_entry:    psl
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -288,6 +301,9 @@ type:              real
 !============
 variable_entry:    huss
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -311,6 +327,9 @@ type:              real
 !============
 variable_entry:    sfcWind
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -334,6 +353,9 @@ type:              real
 !============
 variable_entry:    clt
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -358,6 +380,9 @@ type:              real
 !============
 variable_entry:    sund
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -380,6 +405,9 @@ type:              real
 !============
 variable_entry:    rsds
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -403,6 +431,9 @@ positive:          down
 !============
 variable_entry:    rlds
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -426,6 +457,9 @@ positive:          down
 !============
 variable_entry:    hfls
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -448,6 +482,9 @@ positive:          up
 !============
 variable_entry:    hfss
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -473,6 +510,9 @@ positive:          up
 !============
 variable_entry:    rsus
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -497,6 +537,9 @@ positive:          up
 !============
 variable_entry:    rlus
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -516,11 +559,12 @@ positive:          up
 !----------------------------------
 !
 
-
-
 !============
 variable_entry:    prc
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:

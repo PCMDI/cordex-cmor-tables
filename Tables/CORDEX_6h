@@ -269,6 +269,9 @@ must_have_bounds: no
 !============
 variable_entry:    evspsbl
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -291,6 +294,9 @@ type:              real
 !============
 variable_entry:    evspsblpot
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    land
 !----------------------------------
 ! Variable attributes:
@@ -313,6 +319,9 @@ type:              real
 !============
 variable_entry:    mrfso
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    land landIce
 !----------------------------------
 ! Variable attributes:
@@ -335,6 +344,9 @@ type:              real
 !============
 variable_entry:    mrros
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    land
 !----------------------------------
 ! Variable attributes:
@@ -357,6 +369,9 @@ type:              real
 !============
 variable_entry:    mrro
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    land
 !----------------------------------
 ! Variable attributes:
@@ -379,6 +394,9 @@ type:              real
 !============
 variable_entry:    mrso
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    land
 !----------------------------------
 ! Variable attributes:
@@ -401,6 +419,9 @@ type:              real
 !============
 variable_entry:    snw
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    land
 !----------------------------------
 ! Variable attributes:
@@ -424,6 +445,9 @@ type:              real
 !============
 variable_entry:    snm
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    landIce land
 !----------------------------------
 ! Variable attributes:
@@ -447,6 +471,9 @@ type:              real
 !============
 variable_entry:    rlut
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -475,6 +502,9 @@ positive:          up
 !============
 variable_entry:    rsdt
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -497,6 +527,9 @@ positive:          down
 !============
 variable_entry:    rsut
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -519,6 +552,9 @@ positive:          up
 !============
 variable_entry:    uas
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -541,6 +577,9 @@ type:              real
 !============
 variable_entry:    vas
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -565,6 +604,9 @@ type:              real
 !============
 variable_entry:    tauu
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -587,6 +629,9 @@ positive:          down
 !============
 variable_entry:    tauv
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -611,6 +656,9 @@ positive:          down
 !============
 variable_entry:    ts
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -635,6 +683,9 @@ type:              real
 !============
 variable_entry:    zmla
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -656,6 +707,9 @@ type:              real
 !============
 variable_entry:    prw
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -679,6 +733,9 @@ type:              real
 !============
 variable_entry:    clwvi
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -701,6 +758,9 @@ type:              real
 !============
 variable_entry:    clivi
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -723,6 +783,9 @@ type:              real
 !============
 variable_entry:    ua850
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -744,6 +807,9 @@ type:              real
 !============
 variable_entry:    va850
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -765,6 +831,9 @@ type:              real
 !============
 variable_entry:    ta850
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -787,6 +856,9 @@ type:              real
 !============
 variable_entry:    hus850
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -809,6 +881,9 @@ type:              real
 !============
 variable_entry:    ua500
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -830,6 +905,9 @@ type:              real
 !============
 variable_entry:    va500
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -851,6 +929,9 @@ type:              real
 !============
 variable_entry:    zg500
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -872,6 +953,9 @@ type:              real
 !============
 variable_entry:    ta500
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -894,6 +978,9 @@ type:              real
 !============
 variable_entry:    ua200
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -916,6 +1003,9 @@ type:              real
 !============
 variable_entry:    va200
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -938,6 +1028,9 @@ type:              real
 !============
 variable_entry:    ta200
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -961,6 +1054,9 @@ type:              real
 !============
 variable_entry:    zg200
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -984,6 +1080,9 @@ type:              real
 !============
 variable_entry:    clh
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -1006,6 +1105,9 @@ type:              real
 !============
 variable_entry:    clm
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -1030,6 +1132,9 @@ type:              real
 !============
 variable_entry:    cll
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
