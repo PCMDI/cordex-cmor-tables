@@ -259,7 +259,7 @@ modeling_realm:    atmos
 standard_name:     air_temperature
 units:             K
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Near-Surface Air Temperature
 comment:           daily-mean near-surface (usually, 2 meter) air temperature.
 !----------------------------------
@@ -284,7 +284,7 @@ modeling_realm:    atmos
 standard_name:     air_temperature
 units:             K
 cell_methods:      time: maximum
-cell_measures:      area: areacella
+
 long_name:         Daily Maximum Near-Surface Air Temperature
 comment:           daily-maximum near-surface (usually, 2 meter) air temperature.
 !----------------------------------
@@ -311,7 +311,7 @@ modeling_realm:    atmos
 standard_name:     air_temperature
 units:             K
 cell_methods:      time: minimum
-cell_measures:      area: areacella
+
 long_name:         Daily Minimum Near-Surface Air Temperature
 comment:           daily-minimum near-surface (usually, 2 meter) air temperature.  
 !----------------------------------
@@ -336,7 +336,7 @@ modeling_realm:    atmos
 standard_name:     precipitation_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Precipitation
 comment:           at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective)
 !----------------------------------
@@ -361,7 +361,7 @@ modeling_realm:    atmos
 standard_name:     surface_air_pressure
 units:             Pa
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Air Pressure
 !----------------------------------
 ! Additional variable information:
@@ -385,7 +385,7 @@ modeling_realm:    atmos
 standard_name:     air_pressure_at_sea_level
 units:             Pa
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Sea Level Pressure
 !----------------------------------
 ! Additional variable information:
@@ -412,7 +412,7 @@ modeling_realm:    atmos
 standard_name:     specific_humidity
 units:             1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Near-Surface Specific Humidity
 comment:           near-surface (usually, 2 meter) specific humidity.
 !----------------------------------
@@ -438,7 +438,7 @@ modeling_realm:    atmos
 standard_name:     wind_speed
 units:             m s-1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Daily-Mean Near-Surface Wind Speed
 comment:           near-surface (usually, 10 meters) wind speed.
 !----------------------------------
@@ -463,7 +463,7 @@ modeling_realm:    atmos
 standard_name:     wind_speed
 units:             m s-1
 cell_methods:      time: maximum
-cell_measures:      area: areacella
+
 long_name:         Daily Maximum Near-Surface Wind Speed
 comment:           near-surface (usually, 10 meters) wind speed.  
 !----------------------------------
@@ -488,7 +488,6 @@ modeling_realm:    atmos
 standard_name:     cloud_area_fraction
 units:             %
 cell_methods:      time: mean
-cell_measures:      area: areacella
 long_name:         Total Cloud Fraction
 comment:           for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Include both large-scale and convective cloud.
 !----------------------------------
@@ -515,7 +514,7 @@ modeling_realm:    atmos
 standard_name:     duration_of_sunshine
 units:             s
 cell_methods:      time: sum
-cell_measures:     area: areacella
+
 long_name:         Duration of Sunshine
 comment:             
 !----------------------------------
@@ -540,7 +539,7 @@ modeling_realm:    atmos
 standard_name:     surface_downwelling_shortwave_flux_in_air
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Downwelling Shortwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -566,7 +565,7 @@ modeling_realm:    atmos
 standard_name:     surface_downwelling_longwave_flux_in_air
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Downwelling Longwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -592,7 +591,7 @@ modeling_realm:    atmos
 standard_name:     surface_upward_latent_heat_flux
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Upward Latent Heat Flux
 !----------------------------------
 ! Additional variable information:
@@ -617,7 +616,7 @@ modeling_realm:    atmos
 standard_name:     surface_upward_sensible_heat_flux
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Upward Sensible Heat Flux
 !----------------------------------
 ! Additional variable information:
@@ -645,7 +644,7 @@ modeling_realm:    atmos
 standard_name:     surface_upwelling_shortwave_flux_in_air
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Upwelling Shortwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -672,7 +671,7 @@ modeling_realm:    atmos
 standard_name:     surface_upwelling_longwave_flux_in_air
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Upwelling Longwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -698,7 +697,7 @@ modeling_realm:    atmos
 standard_name:     water_evaporation_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
-cell_measures:     area: areacella
+
 long_name:         Evaporation
 comment:           at surface; flux of water into the atmosphere due to conversion of both liquid and solid phases to vapor (from underlying surface and vegetation)
 !----------------------------------
@@ -723,7 +722,7 @@ modeling_realm:    land
 standard_name:     water_potential_evaporation_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
-cell_measures:     area: areacella
+
 long_name:         Potential evaporation
 comment:           at surface; potential flux of water into the atmosphere due to conversion of both liquid and solid phases to vapor (from underlying surface and vegetation)
 !----------------------------------
@@ -748,7 +747,6 @@ modeling_realm:    land landIce
 standard_name:     soil_frozen_water_content
 units:             kg m-2
 cell_methods:      time: mean area: mean where land
-cell_measures:      area: areacella
 long_name:         Soil Frozen Water Content 
 comment:           Compute the mass (summed over all all layers) of frozen water.
 !----------------------------------
@@ -773,7 +771,7 @@ modeling_realm:    land
 standard_name:     surface_runoff_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean area: mean where land
-cell_measures:      area: areacella
+
 long_name:         Surface Runoff
 comment:           Compute the total surface runoff leaving the land portion of the grid cell.
 !----------------------------------
@@ -798,7 +796,7 @@ modeling_realm:    land
 standard_name:     runoff_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean area: mean where land
-cell_measures:      area: areacella
+
 long_name:         Total Runoff
 comment:           "compute the total runoff (including ""drainage"" through the base of the soil model) leaving the land portion of the grid cell."
 !----------------------------------
@@ -823,7 +821,7 @@ modeling_realm:    land
 standard_name:     soil_moisture_content
 units:             kg m-2
 cell_methods:      time: mean area: mean where land
-cell_measures:      area: areacella
+
 long_name:         Total Soil Moisture Content
 comment:           Compute the mass per unit area  (summed over all soil layers) of water in all phases.
 !----------------------------------
@@ -848,7 +846,7 @@ modeling_realm:    land
 standard_name:     surface_snow_amount
 units:             kg m-2
 cell_methods:      time: mean area: mean where land
-cell_measures:      area: areacella
+
 long_name:         Surface Snow Amount
 comment:           Compute as the mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; report 0.0 where the land fraction is 0; exclude snow on vegetation canopy or on sea ice.
 !----------------------------------
@@ -874,7 +872,7 @@ modeling_realm:    landIce land
 standard_name:     surface_snow_melt_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean area: mean where land
-cell_measures:      area: areacella
+
 long_name:         Surface Snow Melt
 comment:           Compute as the total surface melt water on the land portion of the grid cell divided by the land area in the grid cell; report as 0.0 for snow-free land regions; report as 0.0 where the land fraction is 0.
 !----------------------------------
@@ -899,7 +897,7 @@ modeling_realm:    atmos
 standard_name:     precipitation_flux
 units:             kg m-2 s-1
 cell_methods:      time: maximum
-cell_measures:     area: areacella
+
 long_name:         Daily Maximum Hourly Precipitation Rate
 comment:           
 !----------------------------------
@@ -923,7 +921,7 @@ modeling_realm:    atmos
 standard_name:     convective_precipitation_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Convective Precipitation
 comment:           at surface; includes both liquid and solid phases.
 !----------------------------------
@@ -948,7 +946,7 @@ modeling_realm:    atmos
 standard_name:     toa_outgoing_longwave_flux
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         TOA Outgoing Longwave Radiation
 comment:           at the top of the atmosphere.
 !----------------------------------
@@ -979,7 +977,7 @@ modeling_realm:    atmos
 standard_name:     toa_incoming_shortwave_flux
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         TOA Incident Shortwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -1004,7 +1002,6 @@ modeling_realm:    atmos
 standard_name:     toa_outgoing_shortwave_flux
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
 long_name:         TOA Outgoing Shortwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -1029,7 +1026,7 @@ modeling_realm:    atmos
 standard_name:     eastward_wind
 units:             m s-1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Eastward Near-Surface Wind
 comment:           near-surface (usually, 10 meters) eastward component of wind.
 !----------------------------------
@@ -1054,7 +1051,7 @@ modeling_realm:    atmos
 standard_name:     northward_wind
 units:             m s-1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Northward Near-Surface Wind
 comment:           near-surface (usually, 10 meters) northward component of wind.  
 !----------------------------------
@@ -1079,7 +1076,7 @@ modeling_realm:    atmos
 standard_name:     wind_speed_of_gust
 units:             m s-1
 cell_methods:      time: maximum
-cell_measures:      area: areacella
+
 long_name:         Daily Maximum Near-Surface Wind Speed Of Gust
 comment:           near-surface (usually, 10 meters) wind speed of gust
 !----------------------------------
@@ -1106,7 +1103,7 @@ modeling_realm:    atmos
 standard_name:     surface_downward_eastward_stress
 units:             Pa
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Downward Eastward Wind Stress
 !----------------------------------
 ! Additional variable information:
@@ -1131,7 +1128,7 @@ modeling_realm:    atmos
 standard_name:     surface_downward_northward_stress
 units:             Pa
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Downward Northward Wind Stress
 !----------------------------------
 ! Additional variable information:
@@ -1158,7 +1155,7 @@ modeling_realm:    atmos
 standard_name:     surface_temperature
 units:             K
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Temperature
 comment:           ""skin"" temperature (i.e., SST for open ocean)
 !----------------------------------
@@ -1185,7 +1182,7 @@ modeling_realm:    atmos
 standard_name:     atmosphere_boundary_layer_tickness
 units:             m
 cell_methods:      time: mean
-cell_measures:     area: areacella
+
 long_name:         Height of Boundary Layer
 comment:           
 !----------------------------------
@@ -1209,7 +1206,7 @@ modeling_realm:    atmos
 standard_name:     atmosphere_water_vapor_content
 units:             kg m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Column water vapor content
 comment:           vertically integrated for a column
 !----------------------------------
@@ -1235,7 +1232,7 @@ modeling_realm:    atmos
 standard_name:     atmosphere_cloud_condensed_water_content
 units:             kg m-2 
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Condensed Water Path
 comment:           calculate mass of condensed (liquid + ice) water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Include precipitating hydrometeors ONLY if the precipitating hydrometeor affects the calculation of radiative transfer in model.  
 !----------------------------------
@@ -1260,7 +1257,6 @@ modeling_realm:    atmos
 standard_name:     atmosphere_cloud_ice_content
 units:             kg m-2 
 cell_methods:      time: mean
-cell_measures:      area: areacella
 long_name:         Ice Water Path
 comment:           calculate mass of ice water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Include precipitating frozen hydrometeors ONLY if the precipitating hydrometeor affects the calculation of radiative transfer in model.  
 !----------------------------------
@@ -1285,7 +1281,7 @@ modeling_realm:    atmos
 standard_name:     eastward_wind
 units:             m s-1 
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Eastward Wind
 !----------------------------------
 ! Additional variable information:
@@ -1309,7 +1305,7 @@ modeling_realm:    atmos
 standard_name:     northward_wind
 units:             m s-1 
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Northward Wind
 !----------------------------------
 ! Additional variable information:
@@ -1333,7 +1329,7 @@ modeling_realm:    atmos
 standard_name:     air_temperature
 units:             K
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Air Temperature
 !----------------------------------
 ! Additional variable information:
@@ -1358,7 +1354,7 @@ modeling_realm:    atmos
 standard_name:     specific_humidity
 units:             1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Specific Humidity
 !----------------------------------
 ! Additional variable information:
@@ -1383,7 +1379,7 @@ modeling_realm:    atmos
 standard_name:     eastward_wind
 units:             m s-1 
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Eastward Wind
 !----------------------------------
 ! Additional variable information:
@@ -1407,7 +1403,7 @@ modeling_realm:    atmos
 standard_name:     northward_wind
 units:             m s-1 
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Northward Wind
 !----------------------------------
 ! Additional variable information:
@@ -1431,7 +1427,7 @@ modeling_realm:    atmos
 standard_name:     geopotential_height
 units:             m
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Geopotential Height
 !----------------------------------
 ! Additional variable information:
@@ -1455,7 +1451,7 @@ modeling_realm:    atmos
 standard_name:     air_temperature
 units:             K
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Air Temperature
 !----------------------------------
 ! Additional variable information:
@@ -1480,7 +1476,7 @@ modeling_realm:    atmos
 standard_name:     eastward_wind_at
 units:             m s-1 
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Eastward Wind
 !----------------------------------
 ! Additional variable information:
@@ -1505,7 +1501,6 @@ modeling_realm:    atmos
 standard_name:     northward_wind
 units:             m s-1 
 cell_methods:      time: mean
-cell_measures:      area: areacella
 long_name:         Northward Wind
 !----------------------------------
 ! Additional variable information:
@@ -1530,7 +1525,7 @@ modeling_realm:    atmos
 standard_name:     air_temperature
 units:             K
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Air Temperature
 !----------------------------------
 ! Additional variable information:
@@ -1556,7 +1551,7 @@ modeling_realm:    atmos
 standard_name:     geopotential_height
 units:             m
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Geopotential Height
 !----------------------------------
 ! Additional variable information:
@@ -1582,7 +1577,7 @@ modeling_realm:    atmos
 standard_name:     cloud_area_fraction_in_atmosphere_layer
 units:             %
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         High Cloud Cover
 comment:           p<440 hPa
 !----------------------------------
@@ -1607,7 +1602,7 @@ modeling_realm:    atmos
 standard_name:     cloud_area_fraction_in_atmosphere_layer
 units:             %
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Medium Cloud Cover 
 comment:           440 hPa < p < 680 hPa
 !----------------------------------
@@ -1634,7 +1629,7 @@ modeling_realm:    atmos
 standard_name:     cloud_area_fraction_in_atmosphere_layer
 units:             %
 cell_methods:      time: mean
-cell_measures:     area: areacella
+
 long_name:         Low Cloud Cover 
 comment:           p>680 hPa
 !----------------------------------
@@ -1659,7 +1654,7 @@ modeling_realm:    landIce land
 standard_name:     surface_snow_area_fraction
 units:             %
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Snow Area Fraction
 comment:           Fraction of each grid cell that is occupied by snow that rests on land portion of cell.
 !----------------------------------
@@ -1684,7 +1679,7 @@ modeling_realm:    landIce land
 standard_name:     surface_snow_thickness
 units:             m
 cell_methods:      time: mean area: mean where land
-cell_measures:      area: areacella
+
 long_name:         Snow Depth
 comment:           where land over land.  Compute the mean thickness of snow in the land portion of the grid cell (averaging over the entire land portion, including the snow-free fraction.  Report as 0.0 where the land fraction is 0.
 !----------------------------------
@@ -1709,7 +1704,7 @@ modeling_realm:    seaIce ocean
 standard_name:     sea_ice_area_fraction
 units:             %
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Sea Ice Area Fraction
 comment:           fraction of grid cell covered by sea ice. Report on ocean's grid.
 !----------------------------------
@@ -1737,7 +1732,7 @@ modeling_realm:    atmos
 standard_name:     snowfall_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Solid Precipitation
 comment:           at surface; includes precipitation of all forms of water in the solid phase
 !----------------------------------

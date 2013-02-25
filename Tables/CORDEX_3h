@@ -209,7 +209,7 @@ modeling_realm:    atmos
 standard_name:     air_temperature
 units:             K
 cell_methods:      time: point
-cell_measures:     area: areacella
+
 long_name:         Near-Surface Air Temperature
 comment:           daily-mean near-surface (usually, 2 meter) air temperature.
 !----------------------------------
@@ -235,7 +235,7 @@ modeling_realm:    atmos
 standard_name:     precipitation_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Precipitation
 comment:           at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective)
 !----------------------------------
@@ -260,7 +260,7 @@ modeling_realm:    atmos
 standard_name:     surface_air_pressure
 units:             Pa
 cell_methods:      time: point
-cell_measures:      area: areacella
+
 long_name:         Surface Air Pressure
 !----------------------------------
 ! Additional variable information:
@@ -284,7 +284,7 @@ modeling_realm:    atmos
 standard_name:     air_pressure_at_sea_level
 units:             Pa
 cell_methods:      time: point
-cell_measures:      area: areacella
+
 long_name:         Sea Level Pressure
 !----------------------------------
 ! Additional variable information:
@@ -311,7 +311,7 @@ modeling_realm:    atmos
 standard_name:     specific_humidity
 units:             1
 cell_methods:      time: point
-cell_measures:      area: areacella
+
 long_name:         Near-Surface Specific Humidity
 comment:           near-surface (usually, 2 meter) specific humidity.
 !----------------------------------
@@ -337,7 +337,7 @@ modeling_realm:    atmos
 standard_name:     wind_speed
 units:             m s-1
 cell_methods:      time: point
-cell_measures:      area: areacella
+
 long_name:         Daily-Mean Near-Surface Wind Speed
 comment:           near-surface (usually, 10 meters) wind speed.
 !----------------------------------
@@ -363,7 +363,7 @@ modeling_realm:    atmos
 standard_name:     cloud_area_fraction
 units:             %
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Total Cloud Fraction
 comment:           for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Include both large-scale and convective cloud.
 !----------------------------------
@@ -390,7 +390,7 @@ modeling_realm:    atmos
 standard_name:     duration_of_sunshine
 units:             s
 cell_methods:      time: sum
-cell_measures:     area: areacella
+
 long_name:         Duration of Sunshine
 comment:             
 !----------------------------------
@@ -415,7 +415,7 @@ modeling_realm:    atmos
 standard_name:     surface_downwelling_shortwave_flux_in_air
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Downwelling Shortwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -441,7 +441,6 @@ modeling_realm:    atmos
 standard_name:     surface_downwelling_longwave_flux_in_air
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
 long_name:         Surface Downwelling Longwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -467,7 +466,7 @@ modeling_realm:    atmos
 standard_name:     surface_upward_latent_heat_flux
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Upward Latent Heat Flux
 !----------------------------------
 ! Additional variable information:
@@ -492,7 +491,7 @@ modeling_realm:    atmos
 standard_name:     surface_upward_sensible_heat_flux
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Upward Sensible Heat Flux
 !----------------------------------
 ! Additional variable information:
@@ -520,7 +519,7 @@ modeling_realm:    atmos
 standard_name:     surface_upwelling_shortwave_flux_in_air
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Upwelling Shortwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -547,7 +546,7 @@ modeling_realm:    atmos
 standard_name:     surface_upwelling_longwave_flux_in_air
 units:             W m-2
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Surface Upwelling Longwave Radiation
 !----------------------------------
 ! Additional variable information:
@@ -572,7 +571,7 @@ modeling_realm:    atmos
 standard_name:     convective_precipitation_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
-cell_measures:      area: areacella
+
 long_name:         Convective Precipitation
 comment:           at surface; includes both liquid and solid phases.
 !----------------------------------
