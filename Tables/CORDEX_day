@@ -1083,7 +1083,7 @@ comment:           near-surface (usually, 10 meters) wind speed of gust
 ! Additional variable information:
 !----------------------------------
 dimensions:        longitude latitude time height10m
-out_name:          wsgsmaw
+out_name:          wsgsmax
 type:              real
 !----------------------------------
 !
