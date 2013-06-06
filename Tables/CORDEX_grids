@@ -1,7 +1,7 @@
 table_id: Table grids
 
 
-cmor_version: 2.0         ! version of CMOR that can read this table
+cmor_version: 2.6         ! version of CMOR that can read this table
 cf_version:   1.4         ! version of CF that output conforms to
 project_id:   CORDEX       ! project id
 table_date:   April 2013 ! date this table was constructed
@@ -12,20 +12,14 @@ missing_value: 1.e20      ! value used to indicate a missing value
 
 product: output
 ! CMIP5's Table adapted for CORDEX
-required_global_attributes: creation_date tracking_id forcing model_id parent_experiment_id branch_time ! space separated required global attribute 
+required_global_attributes: creation_date tracking_id forcing model_id conact institute_id ! space separated required global attribute 
 
-
-expt_id_ok: 'A1BfromIPSL'
-expt_id_ok: 'A1BfromEH5'
-expt_id_ok: '20CfromIPSL'
-expt_id_ok: '20CfromEH5'
-expt_id_ok: 'fromERAint'
-expt_id_ok: 'IPSL-CM4-A1B'
-expt_id_ok: 'IPSL-CM4-20C'
-expt_id_ok: 'EH5-OM-A1B-3'
-expt_id_ok: 'EH5-OM-20C-3'
-expt_id_ok: 'ERAint'
-
+expt_id_ok: 'Evaluation run with reanalysis forcing' 'evaluation'
+expt_id_ok: 'historical' 'historical'
+expt_id_ok: 'RCP4.5' 'rcp45'
+expt_id_ok: 'RCP8.5' 'rcp85'
+expt_id_ok: 'AMIP' 'amip'
+expt_id_ok: '10- or 30-year run initialized in year XXXX' 'decadalXXXX'
 
 !
 !
