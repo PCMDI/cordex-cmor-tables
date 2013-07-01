@@ -42,8 +42,6 @@ long_name:        longitude
 ! Additional axis information:
 !----------------------------------
 out_name:         lon
-valid_min:        -180.0         
-valid_max:        +180.0 
 stored_direction: increasing
 type:             double
 must_have_bounds: yes
