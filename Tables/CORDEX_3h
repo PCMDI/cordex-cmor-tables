@@ -15,9 +15,7 @@ missing_value: 1.e20      ! value used to indicate a missing value
 
 product: output
 ! CMIP5's Table adapted for CORDEX
-required_global_attributes: creation_date tracking_id forcing model_id contact institute_id ! space separated required global attribute 
-
-forcings:   N/A Nat Ant GHG SA 
+required_global_attributes: creation_date tracking_id model_id contact institute_id ! space separated required global attribute 
 
 expt_id_ok: 'Evaluation run with reanalysis forcing' 'evaluation'
 expt_id_ok: 'historical' 'historical'
