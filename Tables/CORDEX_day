@@ -1073,7 +1073,7 @@ standard_name:     wind_speed_of_gust
 units:             m s-1
 cell_methods:      time: maximum
 
-long_name:         Daily Maximum Near-Surface Wind Speed Of Gust
+long_name:         Daily Maximum Near-Surface Wind Speed of Gust
 comment:           near-surface (usually, 10 meters) wind speed of gust
 !----------------------------------
 ! Additional variable information:
