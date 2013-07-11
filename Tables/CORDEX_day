@@ -1175,7 +1175,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     atmosphere_boundary_layer_tickness
+standard_name:     atmosphere_boundary_layer_thickness
 units:             m
 cell_methods:      time: mean
 
@@ -1469,7 +1469,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     eastward_wind_at
+standard_name:     eastward_wind
 units:             m s-1 
 cell_methods:      time: mean
 

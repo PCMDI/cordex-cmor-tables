@@ -684,7 +684,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     atmosphere_boundary_layer_tickness
+standard_name:     atmosphere_boundary_layer_thickness
 units:             m
 cell_methods:      time: point
 
