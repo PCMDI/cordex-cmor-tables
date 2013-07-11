@@ -74,6 +74,9 @@ must_have_bounds: yes
 !============
 variable_entry:    areacella
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos land
 !----------------------------------
 ! Variable attributes:
@@ -94,6 +97,9 @@ type:              real
 !============
 variable_entry:    orog
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -117,6 +123,9 @@ valid_max:         10000.0
 !============
 variable_entry:    sftlf
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
@@ -140,6 +149,9 @@ valid_max:         100.0
 !============
 variable_entry:    sftgif
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    land
 !----------------------------------
 ! Variable attributes:
@@ -163,6 +175,9 @@ valid_max:         100.0
 !============
 variable_entry:    mrsofc
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    land
 !----------------------------------
 ! Variable attributes:
@@ -184,6 +199,9 @@ type:              real
 !============
 variable_entry:    rootd
 !============
+deflate: 1
+deflate_level: 1
+shuffle: 1
 modeling_realm:    land
 !----------------------------------
 ! Variable attributes:
