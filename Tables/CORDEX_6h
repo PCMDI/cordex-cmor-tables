@@ -1082,7 +1082,7 @@ standard_name:     cloud_area_fraction_in_atmosphere_layer
 units:             %
 cell_methods:      time: mean
 
-long_name:         High Cloud Cover
+long_name:         High Cloud Cover Fraction
 comment:           p<440 hPa
 !----------------------------------
 ! Additional variable information:
@@ -1107,7 +1107,7 @@ standard_name:     cloud_area_fraction_in_atmosphere_layer
 units:             %
 cell_methods:      time: mean
 
-long_name:         Medium Cloud Cover 
+long_name:         Medium Cloud Cover Fraction
 comment:           440 hPa < p < 680 hPa
 !----------------------------------
 ! Additional variable information:
@@ -1134,7 +1134,7 @@ standard_name:     cloud_area_fraction_in_atmosphere_layer
 units:             %
 cell_methods:      time: mean
 
-long_name:         Low Cloud Cover 
+long_name:         Low Cloud Cover Fraction
 comment:           p>680 hPa
 !----------------------------------
 ! Additional variable information:
