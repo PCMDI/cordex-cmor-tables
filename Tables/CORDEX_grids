@@ -222,10 +222,6 @@ dimensions:	  longitude latitude
 ! Additional axis information:
 !----------------------------------	
 out_name:         lon
-valid_min:        0.           ! CMOR will add n*360 to input values
-                               ! (where n is an integer) to ensure 
-                               !  longitudes are in proper range.
-valid_max:        360.         !  see above comment.
 !----------------------------------	
 !
 !
@@ -242,8 +238,6 @@ dimensions:	  longitude latitude
 ! Additional axis information:
 !----------------------------------	
 out_name:         lat
-valid_min:        -90.        
-valid_max:        90.
 !----------------------------------	
 !
 !
@@ -258,10 +252,6 @@ dimensions:	  vertices longitude latitude
 ! Additional axis information:
 !----------------------------------	
 out_name:         lon_vertices
-valid_min:        0.           ! CMOR will add n*360 to input values
-                               ! (where n is an integer) to ensure 
-                               !  longitudes are in proper range.
-valid_max:        360.         !  see above comment.
 !----------------------------------	
 !
 !
@@ -276,8 +266,6 @@ dimensions:	  vertices longitude latitude
 ! Additional axis information:
 !----------------------------------	
 out_name:         lat_vertices
-valid_min:        -90.        
-valid_max:        90.
 !----------------------------------	
 !
 !
