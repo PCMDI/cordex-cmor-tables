@@ -719,7 +719,7 @@ standard_name:     water_potential_evaporation_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
 
-long_name:         Potential evaporation
+long_name:         Potential Evapotranspiration
 comment:           at surface; potential flux of water into the atmosphere due to conversion of both liquid and solid phases to vapor (from underlying surface and vegetation)
 !----------------------------------
 ! Additional variable information:
@@ -1203,7 +1203,7 @@ standard_name:     atmosphere_water_vapor_content
 units:             kg m-2
 cell_methods:      time: mean
 
-long_name:         Column water vapor content
+long_name:         Water Vapor Path
 comment:           vertically integrated for a column
 !----------------------------------
 ! Additional variable information:
@@ -1729,7 +1729,7 @@ standard_name:     snowfall_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
 
-long_name:         Solid Precipitation
+long_name:         Snowfall Flux
 comment:           at surface; includes precipitation of all forms of water in the solid phase
 !----------------------------------
 ! Additional variable information:

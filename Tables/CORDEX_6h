@@ -299,7 +299,7 @@ modeling_realm:    land
 standard_name:     water_potential_evaporation_flux
 units:             kg m-2 s-1
 cell_methods:      time: mean
-long_name:         Potential evaporation
+long_name:         Potential Evapotranspiration
 comment:           at surface; potential flux of water into the atmosphere due to conversion of both liquid and solid phases to vapor (from underlying surface and vegetation)
 !----------------------------------
 ! Additional variable information:
@@ -711,8 +711,7 @@ modeling_realm:    atmos
 standard_name:     atmosphere_water_vapor_content
 units:             kg m-2
 cell_methods:      time: point
-
-long_name:         Column water vapor content
+long_name:         Water Vapor Path
 comment:           vertically integrated for a column
 !----------------------------------
 ! Additional variable information:
@@ -929,7 +928,7 @@ modeling_realm:    atmos
 !----------------------------------
 ! Variable attributes:
 !----------------------------------
-standard_name:     geopotential
+standard_name:     geopotential_height
 units:             m
 cell_methods:      time: point
 
