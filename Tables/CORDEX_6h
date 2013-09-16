@@ -263,6 +263,77 @@ must_have_bounds: no
 
 
 !============
+axis_entry: p220
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    air_pressure
+units:            Pa
+axis:             Z             ! X, Y, Z, T (default: undeclared)
+positive:         down         ! up or down (default: undeclared)
+long_name:        pressure
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         plev
+stored_direction: decreasing
+type:             double
+value:            22000.            ! of scalar (singleton) dimension 
+bounds_values:    44000. 0.0    ! of scalar (singleton) dimension bounds
+must_have_bounds: no
+!----------------------------------
+!
+
+
+!============
+axis_entry: p560
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    air_pressure
+units:            Pa
+axis:             Z             ! X, Y, Z, T (default: undeclared)
+positive:         down         ! up or down (default: undeclared)
+long_name:        pressure
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         plev
+stored_direction: decreasing
+type:             double
+value:            56000.            ! of scalar (singleton) dimension 
+bounds_values:    68000. 44000.    ! of scalar (singleton) dimension bounds
+must_have_bounds: no
+!----------------------------------
+!
+
+
+!============
+axis_entry: p840
+!============
+!----------------------------------
+! Axis attributes:
+!----------------------------------
+standard_name:    air_pressure
+units:            Pa
+axis:             Z             ! X, Y, Z, T (default: undeclared)
+positive:         down         ! up or down (default: undeclared)
+long_name:        pressure
+!----------------------------------
+! Additional axis information:
+!----------------------------------
+out_name:         plev
+stored_direction: decreasing
+type:             double
+value:            84000.            ! of scalar (singleton) dimension 
+bounds_values:    100000. 68000.    ! of scalar (singleton) dimension bounds
+must_have_bounds: no
+!----------------------------------
+!
+
+!============
 variable_entry:    evspsbl
 !============
 deflate: 1
@@ -1087,7 +1158,7 @@ comment:           p<440 hPa
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time p220
 out_name:          clh
 type:              real
 !----------------------------------
@@ -1112,7 +1183,7 @@ comment:           440 hPa < p < 680 hPa
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time p560
 out_name:          clm
 type:              real
 !----------------------------------
@@ -1139,7 +1210,7 @@ comment:           p>680 hPa
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time p840
 out_name:          cll
 type:              real
 !----------------------------------
