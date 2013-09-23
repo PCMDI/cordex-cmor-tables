@@ -354,6 +354,7 @@ comment:           at surface; flux of water into the atmosphere due to conversi
 dimensions:        longitude latitude time
 out_name:          evspsbl
 type:              real
+positive:          up
 !----------------------------------
 !
 
@@ -378,6 +379,7 @@ comment:           at surface; potential flux of water into the atmosphere due t
 dimensions:        longitude latitude time
 out_name:          evspsblpot
 type:              real
+positive:          up
 !----------------------------------
 !
 
