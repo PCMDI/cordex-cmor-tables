@@ -484,7 +484,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     duration_of_sunshine
 units:             s
-cell_methods:      time: sum
+cell_methods:      time: sum within days time: mean over days
 long_name:         Duration of Sunshine
 comment:             
 !----------------------------------
