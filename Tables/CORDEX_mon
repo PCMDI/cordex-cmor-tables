@@ -1130,7 +1130,7 @@ long_name:         Geopotential Height
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time plev500
 out_name:          zg500
 type:              real
 !----------------------------------
