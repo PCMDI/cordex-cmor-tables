@@ -1236,7 +1236,7 @@ comment:           Fraction of each grid cell that is occupied by snow that rest
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          snc
 type:              real
 !----------------------------------
@@ -1261,7 +1261,7 @@ comment:           where land over land.  Compute the mean thickness of snow in 
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time
+dimensions:        longitude latitude time1
 out_name:          snd
 type:              real
 !----------------------------------
