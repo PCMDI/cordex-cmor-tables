@@ -6,7 +6,7 @@ frequency: mon
 cmor_version: 2.6         ! version of CMOR that can read this table
 cf_version:   1.4         ! version of CF that output conforms to
 project_id:   CORDEX  ! project id
-table_date:   Sept 2013 ! date this table was constructed
+table_date:   Mar 2015 ! date this table was constructed
 
 missing_value: 1.e20      ! value used to indicate a missing value
                           !   in arrays output by netCDF as 32-bit IEEE 
@@ -366,8 +366,27 @@ type:              real
 !----------------------------------
 !
 
-
-
+!============
+variable_entry:    hurs
+!============
+modeling_realm:    atmos
+!----------------------------------
+! Variable attributes:
+!----------------------------------
+standard_name:     relative_humidity
+units:             %
+cell_methods:      time: mean
+cell_measures:     area: areacella
+long_name:         Near-Surface Relative Humidity
+comment:           This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.
+!----------------------------------
+! Additional variable information:
+!----------------------------------
+dimensions:        longitude latitude time height2m
+out_name:          hurs
+type:              real
+!----------------------------------
+!
 
 !============
 variable_entry:    huss
