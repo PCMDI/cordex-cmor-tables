@@ -16,6 +16,7 @@ required_global_attributes: creation_date tracking_id model_id conact institute_
 
 expt_id_ok: 'Evaluation run with reanalysis forcing' 'evaluation'
 expt_id_ok: 'historical' 'historical'
+expt_id_ok: 'RCP2.6' 'rcp26'
 expt_id_ok: 'RCP4.5' 'rcp45'
 expt_id_ok: 'RCP8.5' 'rcp85'
 expt_id_ok: 'AMIP' 'amip'
